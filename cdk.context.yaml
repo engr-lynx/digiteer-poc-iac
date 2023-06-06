@@ -1,0 +1,17 @@
+app:
+  name: DigiteerPoC
+  components:
+    db:
+      name: digiteer
+      username: digiteer
+      deleteWithApp: true
+      instance: t4g.medium
+    web:
+      sourceRepo: https://github.com/engr-lynx/mage2-cont.git
+      repoName: mage2-cont
+      deleteImageRepoWithApp: true
+      instance:
+        cpu: '1 vCPU'
+        memory: '2 GB'
+      pipeline:
+        deleteArtifactsWithApp: true
